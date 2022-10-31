@@ -1,0 +1,286 @@
+*{
+padding: 0;
+margin: 0;
+border: 0;
+}
+
+*,*:before,*:after{
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+height: 100%;
+width: 100%;
+font-size: 100%;
+line-height: 1;
+font-size: 14px;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+.bigred{
+font-size: 20px;
+color: red;
+}
+
+
+body {
+font-family: 'Gilroy-Bold';
+font-weight: 700;
+/* overflow: hidden; */
+background: #FFFFFF;
+color: #070707;
+}
+
+@font-face {
+font-family: 'Gilroy-Bold'; 
+font-style: normal;
+font-weight: 700;
+src: local('Gilroy-Bold'),
+url(/fonts/Gilroy-Bold.ttf); 
+}
+
+@font-face {
+font-family: 'Gilroy-Medium'; 
+font-style: normal;
+font-weight: 500;
+src: local('Gilroy-Medium'),
+url(/fonts/Gilroy-Medium.ttf); 
+}
+
+.header {
+padding-top: 34px;
+}
+
+.container {
+max-width: 950px;
+padding: 0 15px;
+margin: 0 auto;
+}
+
+.header__list {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+}
+
+.header-nav__list{
+font-family: 'Gilroy-Bold';
+font-size: 18px;
+font-weight: 500;
+line-height: 82%;
+color: #828282;
+text-align: center;
+}
+
+.header-nav__list:hover {
+color: #070707;
+font-weight: 700;
+}
+
+.header__line {
+margin-top: 32px;
+border-bottom: 1mm ridge rgba(0, 0, 0, 0.6);
+}
+
+.info__text {
+display: flex;
+}
+
+.info__title {
+font-family: 'Gilroy-Bold';
+font-size: 47px;
+line-height: 79%;
+color: #070707;
+margin: 40px 0px 31px 0px;
+}
+
+.info__subtitle {
+font-family: 'Gilroy-Medium';
+font-weight: 400;
+font-size: 18px;
+line-height: 81%;
+display: flex;
+margin: 100px 0px 0px 297px;
+}
+
+.info__img img {
+max-width: 920px;
+margin-top: 10px;
+padding-bottom: 104px;
+}
+
+.inform {
+padding-top: 120px;
+padding-bottom: 107px;
+background: #F6F6F6;
+}
+
+.inform__text-text {
+display: block;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.inform__text:not(:last-child) {
+margin-bottom: 18px;
+}
+
+.title {
+font-family: 'Gilroy-Bold';
+font-size: 34px;
+line-height: 42px;
+text-align: center;
+color: #070707;
+}
+
+.inform__text {
+font-family: 'Gilroy-Medium';
+font-weight: 400;
+font-size: 18px;
+line-height: 81%;
+margin-top: 18px;
+}
+
+
+
+.skills {
+padding-top: 91px;
+padding-bottom: 110px;
+}
+
+.slills__subtitle {
+font-family: 'Gilroy-Medium';
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+color: #070707;
+margin-bottom: 83px;
+}
+
+.skills__items {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+}
+.skill__item img {
+margin-bottom: 23px;
+}
+
+.skills__text {
+padding-bottom: 35px;
+}
+
+.img__card {
+align-items: center;
+}
+
+.adobe__pht {
+background: radial-gradient(75.99% 75.64% at 32.94% 22.44%, rgba(52, 54, 78, 0.98) 0%, #0C0824 100%);
+}
+.adode__il {
+background: radial-gradient(76% 75.63% at 32.97% 22.44%, rgba(66, 51, 37, 0.98) 0%, #1C0A00 100%);
+}
+.adode__effect {
+background: radial-gradient(76% 75.63% at 32.97% 22.42%, rgba(68, 47, 85, 0.98) 0%, #12002C 100%);
+}
+
+
+.portfolio {
+background: #F6F6F6;
+padding-top: 113px;
+padding-bottom: 96px;
+}
+
+.portfolio__img {
+margin-top: 92px;
+margin-bottom: 34px;
+}
+
+.portfolio__text {
+font-family: 'Gilroy-Medium';
+font-weight: 400;
+font-size: 18px;
+line-height: 81%;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+/* text-decoration-line: underline; */
+}
+
+
+.contacts {
+padding-top: 114px;
+padding-bottom: 123px
+}
+
+.contacts__text {
+font-family: 'Gilroy-Medium';
+font-weight: 400;
+font-size: 18px;
+line-height: 82%;
+text-align: center;
+margin-bottom: 30px;
+}
+
+
+
+.button {
+text-align: center;
+width: 180px;
+height: 42px;
+padding: 12px 28px;
+background: #070707;
+color: #FFFFFF;
+font-weight: 400;
+border-radius: 20px;
+margin: 0 auto;
+display: block;
+margin-bottom: 86px;
+}
+
+.contacts__row {
+max-width: 340px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 100%;
+margin-left: 302px;
+}
+
+.copyright {
+font-family: 'Gilroy-Medium';
+font-weight: 400;
+font-size: 14px;
+line-height: 82%;
+text-align: center;
+color: #828282;
+margin-top: 50px;
+}
