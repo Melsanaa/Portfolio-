@@ -47,9 +47,9 @@ color: red;
 body {
 font-family: 'Gilroy-Bold';
 font-weight: 700;
-/* overflow: hidden; */
 background: #FFFFFF;
 color: #070707;
+box-sizing: border-box;
 }
 
 @font-face {
@@ -70,6 +70,7 @@ url(/fonts/Gilroy-Medium.ttf);
 
 .header {
 padding-top: 34px;
+position: relative;
 }
 
 .container {
@@ -105,15 +106,13 @@ margin-top: 32px;
 border-bottom: 1mm ridge rgba(0, 0, 0, 0.6);
 }
 
-.info__text {
-display: flex;
-}
 
 .info__title {
 font-family: 'Gilroy-Bold';
 font-size: 47px;
 line-height: 79%;
 color: #070707;
+display: flex;
 margin: 40px 0px 31px 0px;
 }
 
@@ -123,14 +122,21 @@ font-weight: 400;
 font-size: 18px;
 line-height: 81%;
 display: flex;
-margin: 100px 0px 0px 297px;
+justify-content: center;
+}
+
+.info__img {
+overflow: hidden;
 }
 
 .info__img img {
-max-width: 920px;
+object-fit: contain;
+object-position: center;
 margin-top: 10px;
 padding-bottom: 104px;
 }
+
+
 
 .inform {
 padding-top: 120px;
@@ -189,7 +195,10 @@ justify-content: space-between;
 align-items: center;
 text-align: center;
 }
+
 .skill__item img {
+object-fit: cover;
+object-position: center;
 margin-bottom: 23px;
 }
 
@@ -221,6 +230,12 @@ padding-bottom: 96px;
 .portfolio__img {
 margin-top: 92px;
 margin-bottom: 34px;
+overflow: hidden;
+}
+
+.portfolio__img img{
+object-fit: contain;
+object-position: center;
 }
 
 .portfolio__text {
@@ -232,7 +247,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
-/* text-decoration-line: underline; */
+text-decoration-line: underline;
 }
 
 
@@ -248,6 +263,7 @@ font-size: 18px;
 line-height: 82%;
 text-align: center;
 margin-bottom: 30px;
+margin-top: 20px;
 }
 
 
@@ -266,13 +282,15 @@ display: block;
 margin-bottom: 86px;
 }
 
+.button:hover {
+opacity: 0.5;
+}
+
 .contacts__row {
-max-width: 340px;
 display: flex;
-justify-content: space-between;
+justify-content: center;
 align-items: center;
-height: 100%;
-margin-left: 302px;
+column-gap: 60px;
 }
 
 .copyright {
@@ -284,3 +302,8 @@ text-align: center;
 color: #828282;
 margin-top: 50px;
 }
+
+
+
+
+
